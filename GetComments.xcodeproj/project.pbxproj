@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FAFD877628EDDD70005EF837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD877528EDDD70005EF837 /* AppDelegate.swift */; };
 		FAFD877828EDDD70005EF837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD877728EDDD70005EF837 /* SceneDelegate.swift */; };
-		FAFD877A28EDDD70005EF837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD877928EDDD70005EF837 /* ViewController.swift */; };
+		FAFD877A28EDDD70005EF837 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD877928EDDD70005EF837 /* StartViewController.swift */; };
 		FAFD877D28EDDD70005EF837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFD877B28EDDD70005EF837 /* Main.storyboard */; };
 		FAFD877F28EDDD71005EF837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFD877E28EDDD71005EF837 /* Assets.xcassets */; };
 		FAFD878228EDDD71005EF837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFD878028EDDD71005EF837 /* LaunchScreen.storyboard */; };
+		FAFD878A28EDDF83005EF837 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD878928EDDF83005EF837 /* Comments.swift */; };
+		FAFD878E28EDDFB5005EF837 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD878D28EDDFB5005EF837 /* CommentsTableViewController.swift */; };
+		FAFD879028EDF1EE005EF837 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD878F28EDF1EE005EF837 /* NetworkManager.swift */; };
+		FAFD879228EDF4A0005EF837 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD879128EDF4A0005EF837 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAFD877228EDDD70005EF837 /* GetComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFD877528EDDD70005EF837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFD877728EDDD70005EF837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAFD877928EDDD70005EF837 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFD877928EDDD70005EF837 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FAFD877C28EDDD70005EF837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFD877E28EDDD71005EF837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFD878128EDDD71005EF837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFD878328EDDD71005EF837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFD878928EDDF83005EF837 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		FAFD878D28EDDFB5005EF837 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		FAFD878F28EDF1EE005EF837 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FAFD879128EDF4A0005EF837 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		FAFD877428EDDD70005EF837 /* GetComments */ = {
 			isa = PBXGroup;
 			children = (
+				FAFD879428EDFA7A005EF837 /* Model */,
+				FAFD879328EDFA6C005EF837 /* ViewControllers */,
+				FAFD878F28EDF1EE005EF837 /* NetworkManager.swift */,
+				FAFD877B28EDDD70005EF837 /* Main.storyboard */,
 				FAFD877528EDDD70005EF837 /* AppDelegate.swift */,
 				FAFD877728EDDD70005EF837 /* SceneDelegate.swift */,
-				FAFD877928EDDD70005EF837 /* ViewController.swift */,
-				FAFD877B28EDDD70005EF837 /* Main.storyboard */,
 				FAFD877E28EDDD71005EF837 /* Assets.xcassets */,
 				FAFD878028EDDD71005EF837 /* LaunchScreen.storyboard */,
 				FAFD878328EDDD71005EF837 /* Info.plist */,
 			);
 			path = GetComments;
+			sourceTree = "<group>";
+		};
+		FAFD879328EDFA6C005EF837 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAFD877928EDDD70005EF837 /* StartViewController.swift */,
+				FAFD878D28EDDFB5005EF837 /* CommentsTableViewController.swift */,
+				FAFD879128EDF4A0005EF837 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAFD879428EDFA7A005EF837 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFD878928EDDF83005EF837 /* Comments.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFD877A28EDDD70005EF837 /* ViewController.swift in Sources */,
+				FAFD879028EDF1EE005EF837 /* NetworkManager.swift in Sources */,
+				FAFD878E28EDDFB5005EF837 /* CommentsTableViewController.swift in Sources */,
+				FAFD877A28EDDD70005EF837 /* StartViewController.swift in Sources */,
 				FAFD877628EDDD70005EF837 /* AppDelegate.swift in Sources */,
 				FAFD877828EDDD70005EF837 /* SceneDelegate.swift in Sources */,
+				FAFD878A28EDDF83005EF837 /* Comments.swift in Sources */,
+				FAFD879228EDF4A0005EF837 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
